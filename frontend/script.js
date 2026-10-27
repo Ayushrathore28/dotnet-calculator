@@ -5,7 +5,7 @@ const message = document.getElementById("message");
 const buttons = document.querySelector(".buttons");
 
 // Tumhara .NET backend URL
-const API_URL = "http://localhost:5043/api/calculator";
+const API_URL = "https://ayush-calculator-api.onrender.com/api/calculator";
 
 let currentExpression = "";
 
