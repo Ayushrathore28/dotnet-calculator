@@ -1,0 +1,6 @@
+@CaluclatorApp_HostAddress = http://localhost:5043
+
+GET {{CaluclatorApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

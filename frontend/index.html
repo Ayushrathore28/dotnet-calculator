@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="calculator">
+        <header class="header">
+            <div>
+                <p class="subtitle">SMART CALCULATOR</p>
+                <h1>Nova<span>.</span></h1>
+            </div>
+            <div class="status">
+                <span class="dot"></span> .NET API
+            </div>
+        </header>
+
+        <section class="display">
+            <label for="expression">Enter your calculation</label>
+
+            <input
+                type="text"
+                id="expression"
+                placeholder="e.g. 25 + 5"
+                readonly
+            >
+
+            <div id="result">0</div>
+            <p id="message">Ready to calculate</p>
+        </section>
+
+        <section class="buttons">
+            <button class="utility" data-action="clear">AC</button>
+            <button class="utility" data-action="delete">DEL</button>
+            <button class="operator" data-value="/">÷</button>
+            <button class="operator" data-value="*">×</button>
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button class="operator" data-value="-">−</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button class="operator" data-value="+">+</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button class="equals" data-action="calculate">=</button>
+
+            <button class="zero" data-value="0">0</button>
+            <button data-value=".">.</button>
+        </section>
+
+        <footer>Powered by HTML · CSS · JavaScript · .NET</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
